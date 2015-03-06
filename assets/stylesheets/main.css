@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -55,9 +55,13 @@ table {
   ========================================
 */
 body {
-	color: #000;
+	color: #fff;
 	font-size: 62.5%;
 	/*font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	background: linear-gradient(to left, #000, #383838);
+	background-image: url(../images/test2_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /*
@@ -121,10 +125,9 @@ p {
   ========================================
 */
 a {
-	color: ;
+	color: #fff;
 }
 a:hover {
-	color: ;
 }
 a {
 	text-decoration: none;
@@ -136,13 +139,33 @@ a {
   Side Bar
   ========================================
 */
+.sidebar {
+	float: left;
+	margin: 8px;
+	text-transform: uppercase;
+}
 .logo {
+	position: absolute;
+	top: 4px;
+	left: 8px;
 	font: 24px/24px "Times New Roman", Georgia, Serif;
+}
+.primary-nav {
+	margin-top: 10em;
+}
+.primary-nav hr {
+	width: 4em;
+	margin-left: 0;
 }
 
 .primary-nav li {
 	font: 18px/18px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+	padding: .3em 0;
+}
+footer {
+	position: absolute;
+	left: 8px;
+	bottom: 4px;
 }
 
 small {
@@ -161,16 +184,19 @@ small {
 	margin: 0 auto;
 	text-align: center;
 	background: #000;
-	opacity: 0.75;
-	color: #fff;
+	background-color:rgba(0,0,0,.75)
 }
+
+
 
 .hero h1 {
 	font-size: 10.2em;
+	text-transform: uppercase;
 	font-family: "Times New Roman", Georgia, Serif;
 }
 .hero h2 {
 	font-size: 3.5em;
+	text-transform: uppercase;
 	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .hero p {
@@ -179,7 +205,10 @@ small {
 }
 .btn {
 	/* learn.shayhowe - "opening the box model" */
+	background: #b62220;
+	color: #fff;
 	font: 600 18px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
