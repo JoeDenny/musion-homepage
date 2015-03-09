@@ -154,21 +154,19 @@ a:hover {
 }
 .logo {
 	position: absolute;
-	top: 4px;
+	top: -10px;
 	left: 8px;
-	font: 24px/24px "Times New Roman", Georgia, Serif;
+	font-family: "Times New Roman", Georgia, Serif;
 }
 .primary-nav {
-	/*margin-top: 10em;*/
+	margin-bottom: 40px;
 }
 .primary-nav hr {
-	width: 4em;
 	margin-left: 0;
 }
 
 .primary-nav li {
-	font: 18px/18px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding: .3em 0;
+	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 footer {
 	position: absolute;
@@ -176,9 +174,46 @@ footer {
 	bottom: 4px;
 }
 
-small {
-	font: 18px/24px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@media all and (min-width: 1370px) {
+	.logo {
+		font-size: 3.5em;
+		line-height: 3.5em;
+	}
+	.primary-nav hr {
+		width: 4em;
+	}
+	.primary-nav li {
+		font-size: 1.8em;
+		line-height: 1.8em;
+		padding: .3em 0;
+	}
+	small {
+		font: 18px/24px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
 }
+
+@media all and (max-width: 1369px) {
+	.logo {
+		font-size: 2.4em;
+		line-height: 2.4em;
+	}
+	.primary-nav hr {
+		width: 3em;
+	}
+	.primary-nav li {
+		font-size: 1.34em;
+		line-height: 1.34em;
+		padding: .3em 0;
+	}
+	small {
+		font: 14px/14px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+}
+
+
+
 
 
 /*
@@ -236,7 +271,7 @@ small {
 	}
 	.hero h2 {
 		font-size: 2.3em;
-		line-height: 1.53em;
+		line-height: 2.3em;
 	}
 	.hero p {
 		font-size: 1.02em;
@@ -244,7 +279,8 @@ small {
 	}
 	#small-hr {
 		width: 53.38px;
-		line-height: 1.53em;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 	.hero button {
 		width: 53.38px;
