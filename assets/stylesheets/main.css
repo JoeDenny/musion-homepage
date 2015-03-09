@@ -54,14 +54,24 @@ table {
   Custom styles
   ========================================
 */
+html{
+  height: 100%;
+}
 body {
+	/*min-height: 100%;*/
 	color: #fff;
 	font-size: 62.5%;
 	/*font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	background: linear-gradient(to left, #000, #383838);
-	background-image: url(../images/test2_bg.jpg);
+/*	background-image: url(../images/test2_bg.jpg);
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	background: #000 url(../images/test2_bg.jpg);
+	background-size: auto 100%;
 	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 }
 
 /*
@@ -126,11 +136,9 @@ p {
 */
 a {
 	color: #fff;
+	text-decoration: none;
 }
 a:hover {
-}
-a {
-	text-decoration: none;
 }
 
 /* check out learn.shayhowe "positiong content" if i float any elements*/
@@ -151,7 +159,7 @@ a {
 	font: 24px/24px "Times New Roman", Georgia, Serif;
 }
 .primary-nav {
-	margin-top: 10em;
+	/*margin-top: 10em;*/
 }
 .primary-nav hr {
 	width: 4em;
@@ -178,36 +186,89 @@ small {
   Hero
   ========================================
 */
-.hero {
-	width: 33.333%;
-	/*min-width: 330px;*/
+.hero {	
+	background-color:rgba(0,0,0,.75);
 	margin: 0 auto;
+	/*width: 33.333%;*/
+	/*min-width: 330px;*/
+	/*background: #000;*/
+}
+
+.container {
 	text-align: center;
-	background: #000;
-	background-color:rgba(0,0,0,.75)
+}
+
+/*@media all and (min-width: 1370px) {
+	.hero {
+		width: 768px;
+		height: 628px;
+		margin-top: 407px;
+	}
+	.hero h1 {
+		font-size: 10.2em;
+	}
+	.hero h2 {
+		font-size: 3.5em;
+	}
+	.hero p {
+		font-size: 1.6em;
+	}
+	.hero button {
+		width: 100px;
+		font: 600 18px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+}*/
+
+@media all and (max-width: 1369px) {
+	.hero {
+		width: 410px;
+		margin-top: 177px;
+		padding: 44px 50px;
+
+	}
+	.container {
+		/*border: 1px solid #fff;*/
+		padding: 0;
+	}
+	.hero h1 {
+		font-size: 6.72em;
+		line-height: 1.28em;
+	}
+	.hero h2 {
+		font-size: 2.3em;
+		line-height: 1.53em;
+	}
+	.hero p {
+		font-size: 1.02em;
+		line-height: 1.53em;
+	}
+	#small-hr {
+		width: 53.38px;
+		line-height: 1.53em;
+	}
+	.hero button {
+		width: 53.38px;
+		height: 21.32px;
+		font: 600 9.6px/12.8px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
 }
 
 
-
 .hero h1 {
-	font-size: 10.2em;
 	text-transform: uppercase;
 	font-family: "Times New Roman", Georgia, Serif;
 }
 .hero h2 {
-	font-size: 3.5em;
 	text-transform: uppercase;
 	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .hero p {
-	font-size: 1.6em;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .btn {
 	/* learn.shayhowe - "opening the box model" */
 	background: #b62220;
 	color: #fff;
-	font: 600 18px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	cursor: pointer;
 }
