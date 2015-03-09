@@ -233,31 +233,46 @@ footer {
 	text-align: center;
 }
 
-/*@media all and (min-width: 1370px) {
+@media all and (min-width: 1370px) {
 	.hero {
 		width: 768px;
-		height: 628px;
-		margin-top: 407px;
+		/*height: 628px;*/
+		/*margin-top: 407px;*/
+		margin-top: 15%;
+		padding: 82px 94px;
+	}
+	.container {
+		padding: 0;
 	}
 	.hero h1 {
 		font-size: 10.2em;
+		line-height: 1.94em;
 	}
 	.hero h2 {
 		font-size: 3.5em;
+		line-height: 3em;
 	}
 	.hero p {
 		font-size: 1.6em;
+		line-height: 1.6em;
+	}
+	#small-hr {
+		width: 100px;
+		margin-top: 22.5px;
+		margin-bottom: 22.5px;
 	}
 	.hero button {
 		width: 100px;
+		height: 40px;
 		font: 600 18px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
-}*/
+}
+
 
 @media all and (max-width: 1369px) {
 	.hero {
 		width: 410px;
-		margin-top: 177px;
+		margin-top: 12%;
 		padding: 44px 50px;
 
 	}
@@ -307,5 +322,8 @@ footer {
 	color: #fff;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+.btn:hover {
+	background: #D44440;
 }
 
