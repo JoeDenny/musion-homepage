@@ -54,7 +54,7 @@ table {
   Custom styles
   ========================================
 */
-html{
+html {
   height: 100%;
 }
 body {
@@ -122,12 +122,6 @@ p {
 	line-height: 24px;
 }*/
 
-/*
-  ========================================
-  Buttons
-  ========================================
-*/
-
 
 /*
   ========================================
@@ -147,7 +141,9 @@ a:hover {
   Side Bar
   ========================================
 */
-@media all and (min-width: 600px) {
+
+	/*	Big Screens	*/
+@media all and (min-width: 600px) and (max-width: 1369px) {
 	.sidebar {
 		float: left;
 		margin: 8px;
@@ -351,9 +347,11 @@ a:hover {
 	}
 	.primary-nav a {
 		display: inline-block;
-		width: 60px;
+		/*width: 60px;*/
+
 	}
 	.primary-nav li {
+		width: 16%;
 		float: left;
 		padding: 5px;
 		line-height: 15px;
