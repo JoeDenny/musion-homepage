@@ -139,39 +139,41 @@ a {
 	text-decoration: none;
 }
 a:hover {
+	color: #A58A89;
 }
 
-/* check out learn.shayhowe "positiong content" if i float any elements*/
 /*
   ========================================
   Side Bar
   ========================================
 */
-.sidebar {
-	float: left;
-	margin: 8px;
-	text-transform: uppercase;
-}
-.logo {
-	position: absolute;
-	top: -10px;
-	left: 8px;
-	font-family: "Times New Roman", Georgia, Serif;
-}
-.primary-nav {
-	margin-bottom: 40px;
-}
-.primary-nav hr {
-	margin-left: 0;
-}
+@media all and (min-width: 600px) {
+	.sidebar {
+		float: left;
+		margin: 8px;
+		text-transform: uppercase;
+	}
+	.logo {
+		position: absolute;
+		top: -10px;
+		left: 8px;
+		font-family: "Times New Roman", Georgia, Serif;
+	}
+	.primary-nav {
+		margin-bottom: 40px;
+	}
+	.primary-nav hr {
+		margin-left: 0;
+	}
 
-.primary-nav li {
-	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-footer {
-	position: absolute;
-	left: 8px;
-	bottom: 4px;
+	.primary-nav li {
+		font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	footer {
+		position: absolute;
+		left: 8px;
+		bottom: 4px;
+	}
 }
 
 
@@ -181,12 +183,12 @@ footer {
 		line-height: 3.5em;
 	}
 	.primary-nav hr {
-		width: 4em;
+		width: 4.2em;
 	}
 	.primary-nav li {
 		font-size: 1.8em;
-		line-height: 1.8em;
-		padding: .3em 0;
+		line-height: 1em;
+		padding: 1em 0;
 	}
 	small {
 		font: 18px/24px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -204,7 +206,7 @@ footer {
 	.primary-nav li {
 		font-size: 1.34em;
 		line-height: 1.34em;
-		padding: .3em 0;
+		padding: .5em 0;
 	}
 	small {
 		font: 14px/14px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -238,7 +240,7 @@ footer {
 		width: 768px;
 		/*height: 628px;*/
 		/*margin-top: 407px;*/
-		margin-top: 15%;
+		margin-top: 14%;
 		padding: 82px 94px;
 	}
 	.container {
@@ -327,3 +329,81 @@ footer {
 	background: #D44440;
 }
 
+
+
+
+
+/*
+  ========================================
+  Mobile screen size
+  ========================================
+*/
+
+@media all and (max-width: 600px) {
+	body {
+		background: #000;
+		/*background: radial-gradient(circle at 50% 50%, #000, #383838);*/
+	}
+
+	/* Primary nav */
+	.primary-nav hr {
+		display: none;
+	}
+	.primary-nav a {
+		display: inline-block;
+		width: 60px;
+	}
+	.primary-nav li {
+		float: left;
+		padding: 5px;
+		line-height: 15px;
+		font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	.logo {
+		margin-left: 5px;
+		font-family: "Times New Roman", Georgia, Serif;
+
+	}
+
+	footer {
+		position: absolute;
+		left: 8px;
+		bottom: 4px;
+	}
+
+	/*  Hero */
+
+	.hero {
+		width: 320px;
+		padding: 44px 50px;
+		clear: both;
+		background: radial-gradient(circle at 50% 50%, #383838, #000);
+	}
+	.container {
+		/*border: 1px solid #fff;*/
+		padding: 0;
+	}
+	.hero h1 {
+		font-size: 5.37em;
+		line-height: 1em;
+	}
+	.hero h2 {
+		font-size: 2em;
+		line-height: 1.8em;
+	}
+	.hero p {
+		font-size: 1.02em;
+		line-height: 1.53em;
+	}
+	#small-hr {
+		width: 53.38px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.hero button {
+		width: 53.38px;
+		height: 21.32px;
+		font: 600 9.6px/12.8px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+}
