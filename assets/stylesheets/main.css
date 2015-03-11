@@ -170,57 +170,58 @@ a:hover {
 */
 
 /*		styles		*/
+.sidebar {
+	float: left;
+	margin: 8px;
+	text-transform: uppercase;
+}
 .logo {
+	position: absolute;
+	left: 8px;
+	font-size: 2.4em;
+	line-height: 2.4em;	
 	font-family: "Times New Roman", Georgia, Serif;
 }
 .primary-nav li {
-	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "DINCond Regular", "Khand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease;
+}
+footer {
+	position: absolute;
+	left: 8px;
+	bottom: 4px;
 }
 
 
-/*		non-mobile sidebar 			*/
-@media all and (min-width: 600px) {
-	.sidebar {
-		float: left;
-		margin: 8px;
-		text-transform: uppercase;
-	}
+/*		Desktop			*/
+@media all and (min-width: 533px) and (max-width: 1369px) {
 	.logo {
-		position: absolute;
 		top: -10px;
-		left: 8px;		
 	}
 	.primary-nav {
 		margin-bottom: 40px;
-	}
-	.primary-nav hr {
-		margin-left: 0;
-	}
-	footer {
+		height: 351px;
+		/*width: 100%;*/
 		position: absolute;
-		left: 8px;
-		bottom: 4px;
-	}
-}
-
-/*		Desktop				*/
-@media all and (max-width: 1369px) {
-	.logo {
-		font-size: 2.4em;
-		line-height: 2.4em;
-	}
-	.primary-nav hr {
-		width: 3em;
+		top: 50%;
+		margin-top: -145px;
 	}
 	.primary-nav li {
 		font-size: 1.34em;
-		line-height: 1.34em;
+		line-height: 1em;
 		padding: .5em 0;
 	}
-	small {
-		font: 14px/14px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	.primary-nav li:hover {
+		font-size: 1.6em;
+		margin-left: 10px;
 	}
-
+	.primary-nav hr {
+		margin-left: 0;
+		width: 3em;
+	}
+	small {
+		font: 14px/14px "DINCond Regular", "Khand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
 }
 
 /*		Large resolution	*/
@@ -228,17 +229,30 @@ a:hover {
 	.logo {
 		font-size: 3.5em;
 		line-height: 3.5em;
+		top: -40px;
+	}
+	.primary-nav {
+		height: 455px;
+		/*width: 100%;*/
+		position: absolute;
+		top: 50%;
+		margin-top: -220px;
 	}
 	.primary-nav hr {
+		margin-left: 0;
 		width: 4.2em;
 	}
 	.primary-nav li {
 		font-size: 1.8em;
 		line-height: 1em;
-		padding: 1em 0;
+		padding: 0.8em 0;
+	}
+	.primary-nav li:hover {
+		font-size: 2.1em;
+		margin-left: 12px;
 	}
 	small {
-		font: 18px/24px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font: 18px/24px "DINCond Regular", "Khand", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
 
@@ -256,10 +270,6 @@ a:hover {
 /*		styles 			*/
 .hero {	
 	background-color:rgba(0,0,0,.75);
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
 	margin: 0 auto;
 }
 .container {
@@ -274,21 +284,23 @@ a:hover {
 	font-family: "Times New Roman", Georgia, Serif;
 }
 .hero h2 {
-	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "DINCond Regular", "Khand", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .hero p {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*		Desktop				*/
-/*@media all and (max-width: 1369px) {*/
+@media all and (min-width: 533px) {
 	.hero {
 		height: 335px;
 		width: 410px;		
 		margin-top: -167.5px;
-		/*margin-top: 170px;*/
 		padding: 44px 50px;
-
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
 	}
 	.hero h1 {
 		font-size: 6.72em;
@@ -313,7 +325,7 @@ a:hover {
 		font-size: 0.96em;
 		letter-spacing: 2px;
 	}
-/*}*/
+}
 
 /*		Large resolution	*/
 @media all and (min-width: 1370px) and (min-height: 1200px) {
@@ -322,6 +334,10 @@ a:hover {
 		height: 660px;
 		margin-top: -330px;
 		padding: 82px 94px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
 	}
 	.hero h1 {
 		font-size: 10.2em;
@@ -356,10 +372,9 @@ a:hover {
   ========================================
 */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 532px) {
 	body {
 		background: #000;
-		/*background: radial-gradient(circle at 50% 50%, #000, #383838);*/
 	}
 
 	/* Primary nav */
@@ -368,13 +383,16 @@ a:hover {
 	}
 	.primary-nav a {
 		display: inline-block;
-		/*width: 60px;*/
+	}
+	.primary-nav {
+		margin-top: 50px;
 	}
 	.primary-nav li {
-		width: 16%;
-		float: left;
-		padding: 5px;
-		line-height: 15px;
+		display: inline-block;
+		padding: 6px;
+		width: 15.5%;
+		text-align: center;
+		line-height: 10px;
 	}
 	.logo {
 		margin-left: 5px;
@@ -390,6 +408,7 @@ a:hover {
 
 	.hero {
 		width: 320px;
+		margin-top: 20px;
 		padding: 44px 50px;
 		clear: both;
 		background: radial-gradient(circle at 50% 50%, #383838, #000);
