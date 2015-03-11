@@ -74,6 +74,16 @@ body {
 	background-attachment: fixed;
 }
 
+/*@media all and (max-height: 630px) {
+	body {
+		background: #000 url(../images/test2_bg.jpg);
+		background-size: contain;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+
+}*/
+
 /*
   ========================================
   Grid
@@ -138,12 +148,38 @@ a:hover {
 
 /*
   ========================================
+  Button
+  ========================================
+*/
+.btn {
+	background: #b62220;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 600;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.btn:hover {
+	background: #D44440;
+}
+
+/*
+  ========================================
   Side Bar
   ========================================
 */
 
-	/*	Big Screens	*/
-@media all and (min-width: 600px) and (max-width: 1369px) {
+/*		styles		*/
+.logo {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+.primary-nav li {
+	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*		non-mobile sidebar 			*/
+@media all and (min-width: 600px) {
 	.sidebar {
 		float: left;
 		margin: 8px;
@@ -152,18 +188,13 @@ a:hover {
 	.logo {
 		position: absolute;
 		top: -10px;
-		left: 8px;
-		font-family: "Times New Roman", Georgia, Serif;
+		left: 8px;		
 	}
 	.primary-nav {
 		margin-bottom: 40px;
 	}
 	.primary-nav hr {
 		margin-left: 0;
-	}
-
-	.primary-nav li {
-		font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 	footer {
 		position: absolute;
@@ -172,25 +203,7 @@ a:hover {
 	}
 }
 
-
-@media all and (min-width: 1370px) {
-	.logo {
-		font-size: 3.5em;
-		line-height: 3.5em;
-	}
-	.primary-nav hr {
-		width: 4.2em;
-	}
-	.primary-nav li {
-		font-size: 1.8em;
-		line-height: 1em;
-		padding: 1em 0;
-	}
-	small {
-		font: 18px/24px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-}
-
+/*		Desktop				*/
 @media all and (max-width: 1369px) {
 	.logo {
 		font-size: 2.4em;
@@ -210,6 +223,27 @@ a:hover {
 
 }
 
+/*		Large resolution	*/
+@media all and (min-width: 1370px) {
+	.logo {
+		font-size: 3.5em;
+		line-height: 3.5em;
+	}
+	.primary-nav hr {
+		width: 4.2em;
+	}
+	.primary-nav li {
+		font-size: 1.8em;
+		line-height: 1em;
+		padding: 1em 0;
+	}
+	small {
+		font: 18px/24px "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+}
+
+
+
 
 
 
@@ -219,64 +253,42 @@ a:hover {
   Hero
   ========================================
 */
+/*		styles 			*/
 .hero {	
 	background-color:rgba(0,0,0,.75);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
-	/*width: 33.333%;*/
-	/*min-width: 330px;*/
-	/*background: #000;*/
 }
-
 .container {
+	padding: 0;
 	text-align: center;
 }
-
-@media all and (min-width: 1370px) {
-	.hero {
-		width: 768px;
-		/*height: 628px;*/
-		/*margin-top: 407px;*/
-		margin-top: 14%;
-		padding: 82px 94px;
-	}
-	.container {
-		padding: 0;
-	}
-	.hero h1 {
-		font-size: 10.2em;
-		line-height: 1.94em;
-	}
-	.hero h2 {
-		font-size: 3.5em;
-		line-height: 3em;
-	}
-	.hero p {
-		font-size: 1.6em;
-		line-height: 1.6em;
-	}
-	#small-hr {
-		width: 100px;
-		margin-top: 22.5px;
-		margin-bottom: 22.5px;
-	}
-	.hero button {
-		width: 100px;
-		height: 40px;
-		font: 600 18px/24px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
+.hero h1,
+.hero h2 {
+	text-transform: uppercase;
+}
+.hero h1 {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+.hero h2 {
+	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hero p {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-
-@media all and (max-width: 1369px) {
+/*		Desktop				*/
+/*@media all and (max-width: 1369px) {*/
 	.hero {
-		width: 410px;
-		margin-top: 12%;
+		height: 335px;
+		width: 410px;		
+		margin-top: -167.5px;
+		/*margin-top: 170px;*/
 		padding: 44px 50px;
 
-	}
-	.container {
-		/*border: 1px solid #fff;*/
-		padding: 0;
 	}
 	.hero h1 {
 		font-size: 6.72em;
@@ -298,34 +310,43 @@ a:hover {
 	.hero button {
 		width: 53.38px;
 		height: 21.32px;
-		font: 600 9.6px/12.8px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 0.96em;
+		letter-spacing: 2px;
+	}
+/*}*/
+
+/*		Large resolution	*/
+@media all and (min-width: 1370px) and (min-height: 1200px) {
+	.hero {
+		width: 768px;
+		height: 660px;
+		margin-top: -330px;
+		padding: 82px 94px;
+	}
+	.hero h1 {
+		font-size: 10.2em;
+		line-height: 1.94em;
+	}
+	.hero h2 {
+		font-size: 3.5em;
+		line-height: 3em;
+	}
+	.hero p {
+		font-size: 1.6em;
+		line-height: 1.6em;
+	}
+	#small-hr {
+		width: 100px;
+		margin-top: 22.5px;
+		margin-bottom: 22.5px;
+	}
+	.hero button {
+		width: 100px;
+		height: 40px;
+		font-size: 1.8em;
+		letter-spacing: 4px;
 	}
 }
-
-
-.hero h1 {
-	text-transform: uppercase;
-	font-family: "Times New Roman", Georgia, Serif;
-}
-.hero h2 {
-	text-transform: uppercase;
-	font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.hero p {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.btn {
-	/* learn.shayhowe - "opening the box model" */
-	background: #b62220;
-	color: #fff;
-	text-transform: uppercase;
-	cursor: pointer;
-}
-.btn:hover {
-	background: #D44440;
-}
-
-
 
 
 
@@ -348,19 +369,15 @@ a:hover {
 	.primary-nav a {
 		display: inline-block;
 		/*width: 60px;*/
-
 	}
 	.primary-nav li {
 		width: 16%;
 		float: left;
 		padding: 5px;
 		line-height: 15px;
-		font-family: "DINCond Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 	.logo {
 		margin-left: 5px;
-		font-family: "Times New Roman", Georgia, Serif;
-
 	}
 
 	footer {
