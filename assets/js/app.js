@@ -6,7 +6,7 @@ var main = function() {
 }
 var stretch_button = function() {
 	var body_width = $('body').width();
-	if(body_width > 1370) {
+	if(body_width > 1920) {
 		$('.btn').mouseenter(function() {
 		$(this).animate({
 			width: "120px"
