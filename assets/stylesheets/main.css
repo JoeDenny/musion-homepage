@@ -382,19 +382,24 @@ footer {
 		display: none;
 	}
 	.primary-nav a {
-		display: inline-block;
+		/*display: inline-block;*/
+	}
+	.sidebar {
+		width: 100%;
 	}
 	.primary-nav {
 		margin-top: 50px;
 	}
 	.primary-nav li {
 		display: inline-block;
-		padding: 6px;
-		width: 15.5%;
+		padding: 4px;
+		min-width: 15.5%;
 		text-align: center;
+		font-size: 1.2em;
 		line-height: 10px;
 	}
 	.logo {
+		top: -10px;
 		margin-left: 5px;
 	}
 
