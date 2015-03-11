@@ -58,37 +58,15 @@ html {
   height: 100%;
 }
 body {
-	/*min-height: 100%;*/
 	color: #fff;
 	font-size: 62.5%;
-	/*font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	background: linear-gradient(to left, #000, #383838);
-/*	background-image: url(../images/test2_bg.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;*/
 	background: #000 url(../images/test2_bg_compressed.jpg);
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
 }
-
-/*@media all and (max-height: 630px) {
-	body {
-		background: #000 url(../images/test2_bg.jpg);
-		background-size: contain;
-		background-position: center center;
-		background-attachment: fixed;
-	}
-
-}*/
-
-/*
-  ========================================
-  Grid
-  ========================================
-*/
 *,
 *:before,
 *:after {
@@ -112,8 +90,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
-
 
 /*
   ========================================
@@ -161,12 +137,13 @@ a:hover {
 	position: absolute;
 	left: 8px;
 	font-size: 2.4em;
-	line-height: 2.4em;	
 	font-family: "Times New Roman", Georgia, Serif;
 }
 .primary-nav li {
 	font-family: "DINCond Regular", "Khand", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.5s ease;
+	     -o-transition: all 0.5s ease;
 }
 footer {
 	position: absolute;
@@ -177,13 +154,9 @@ footer {
 
 /*		Desktop			*/
 @media all and (min-width: 533px) {
-	.logo {
-		top: -10px;
-	}
 	.primary-nav {
 		margin-bottom: 40px;
 		height: 351px;
-		/*width: 100%;*/
 		position: absolute;
 		top: 50%;
 		margin-top: -145px;
@@ -210,12 +183,9 @@ footer {
 @media all and (min-width: 1370px) and (min-height: 1201px) {
 	.logo {
 		font-size: 3.5em;
-		line-height: 3.5em;
-		top: -40px;
 	}
 	.primary-nav {
 		height: 455px;
-		/*width: 100%;*/
 		position: absolute;
 		top: 50%;
 		margin-top: -220px;
@@ -237,11 +207,6 @@ footer {
 		font: 18px/24px "DINCond Regular", "Khand", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
-
-
-
-
-
 
 
 /*
@@ -361,12 +326,9 @@ footer {
 		background: #000;
 	}
 
-	/* Primary nav */
+	/* Primary nav --------------------*/
 	.primary-nav hr {
 		display: none;
-	}
-	.primary-nav a {
-		/*display: inline-block;*/
 	}
 	.sidebar {
 		width: 100%;
@@ -383,7 +345,6 @@ footer {
 		line-height: 10px;
 	}
 	.logo {
-		top: -10px;
 		margin-left: 5px;
 	}
 
@@ -393,7 +354,7 @@ footer {
 		bottom: 4px;
 	}
 
-	/*  Hero */
+	/*  Hero -------------------*/
 
 	.hero {
 		width: 320px;
@@ -403,7 +364,6 @@ footer {
 		background: radial-gradient(circle at 50% 50%, #383838, #000);
 	}
 	.container {
-		/*border: 1px solid #fff;*/
 		padding: 0;
 	}
 	.hero h1 {
@@ -428,5 +388,4 @@ footer {
 		height: 21.32px;
 		font: 600 9.6px/12.8px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
-
 }
