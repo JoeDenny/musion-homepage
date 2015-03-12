@@ -6,7 +6,7 @@ Notes
 =============================
 
 Responsive Design:
-I decided on two breakpoints for this design: (min-width: 533px) and (min-width: 1370px) to ensure that the design works for both phones and very monitors.
+I decided on two breakpoints for this design: (min-width: 533px) and (min-width: 1370px) to ensure that the design works for both phones and very large monitors.
 I decided not to use the background image for small screen sizes i.e. mobile devices to speed up page loading in case of a slow network connection. 
 For mobile I switched the main navigation bar from a vertical to horizontal display. I left the navigation expanded rather than applying a hamburger menu for two reasons:
 	1. Not everyone immediately recognises the hamburger menu button as actionable
